@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DVS (Decentralized Voting System)</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo-section">
+        <img src="assets/logo.png" alt="Logo" class="logo">
+        <h1>DVS (Decentralized Voting System)</h1>
+      </div>
+    </header>
+
+    <main>
+      <!-- Voting buttons -->
+      <div class="vote-controls">
+        <button id="voteModi">Vote Modi Ji</button>
+        <button id="voteMamta">Vote Mamta Di</button>
+        <button id="exportBtn">Export Result</button>
+      </div>
+
+      <!-- Chart -->
+      <section>
+        <canvas id="voteChart"></canvas>
+      </section>
+
+      <!-- Blockchain -->
+      <section>
+        <h2>📜 Secure Voting Records</h2>
+        <pre id="blockOutput"></pre>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/blockchain.js"></script>
+  <script src="js/chart.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
